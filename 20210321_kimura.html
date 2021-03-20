@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=ja>
+
+<head>
+  <meta charset="UFT-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>COACHTECH</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-wrap">
+      <h1 class="header-logo">estra inc.</h1>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">service</a></li>
+          <li><a href="#">works</a></li>
+          <li><a href="#">price</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="eyecatch">
+      <p>機械ではできない仕事を</p>
+    
+    <div class="newsbox">
+      <h1 class="news-title">2019/01/01
+        <p>ニュースタイトルがここには入ります。3月の決算報告書</p>
+      </h1>
+      <div class="news">NEWS</div>
+    </div>
+    </div>
+
+<!-- □実現したいこと
+   　 ニュースボックスの中に日付とニュースタイトルを2行で表示する
+
+    □発生している問題
+    　ニュースボックス内に日付とニュースタイトルを入れることはできが、
+    　pタグで改行すると、eyecatch pの設定が適応されてしまう。
+
+    #eyecatch p {
+    position: absolute;
+    bottom: 30%;
+    right: 55%;
+    transform: translateY(-50%,-50%);
+    font-size: 55px;
+    font-style: italic;
+    font-weight: bold;
+    color: #cccccc;
+    line-height: 1;
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=-0.26794919243112214, M21=0, M22=1, SizingMethod='auto
+    expand')";
+    }
+
+    □試したこと
+    　brタグを使い改行したところ、バックグラウンド画像の下に「ニュースタイトルがここには入ります。3月の決算報告書」が表示されてしまいます。
