@@ -5,7 +5,7 @@
   <meta charset="UFT-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>COACHTECH</title>
-  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="stylesheet.css" alt=""/>
 </head>
 
 <body>
@@ -28,40 +28,133 @@
 
   <main>
     <div id="eyecatch">
-      <p>機械ではできない仕事を</p>
+      <div><p1>機械ではできない仕事を</p1></div>
+      
     
     <div class="newsbox">
-      <h1 class="news-title">2019/01/01
-        <p>ニュースタイトルがここには入ります。3月の決算報告書</p>
-      </h1>
+      <div class="news-title">
+        <div><h1>2019/01/01</h1><p>ニュースタイトルがここには入ります。3月の決算報告書</p>
+        </div>
+      </div>
       <div class="news">NEWS</div>
+      </div>
     </div>
-    </div>
 
-<!-- □実現したいこと
-   　 ニュースボックスの中に日付とニュースタイトルを2行で表示する
+    <div id="mission">
+      <div class="mission-wrap">
+        <div class="mission-left">
+          <h3>お客様のために進化する成長企業であり続ける</h3>
+          <p>
+            顧客主導型サービスを提供する企業として、お客様の会社経営に必要なサービスと情報を提供し続ける企業支援会社を目指します。企業が現在直面している「勝ち残るため」の戦略を提供できる会社として、ホームページをはじめ、各種マーケティングをご提供いたします。
+          </p>
+          <div class="button-mission">
+            <button class="button" type="mission">ミッション詳細</button>
+          </div>
+          </div>
+        <div class="mission-right">
+          <img src="img/mission-img.jpg" alt="" />
+        </div>
+      </div>
+      
+      
+      
+        <div id="servise">
+          <h2 class="section-title">servise</h2>
+          <div class="servise-wrap">
+            <div class="servise1-right">
+              <img src="./img/service2.jpg" alt="" />
+              <div class="content-inner1">
+                <div class="servise1-left">
+                 <h3>web制作事業</h3>
+                 <p> </p>
+                  <p>コーチングのミッション</p>
+                  <p> </p>
+                  <p>ユーザーが求めるものを分析し、ユーザビリティを備えた最適なサイトを提供。建設業から美容、ブライダル、飲食店まで多種多様な業種の制作実績があります</p>
+                  <div class="button-mission">  
+                    <button class="button" type="servise">サービス詳細</button>
+                    </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="blank"></div>
 
-    □発生している問題
-    　ニュースボックス内に日付とニュースタイトルを入れることはできが、
-    　pタグで改行すると、eyecatch pの設定が適応されてしまう。
+            <div class="servise2-left">
+              <img src="./img/service1.jpg" alt="" />
+              <div class="content-inner2">
+                <div class="servise2-left">
+                  <h3>web制作事業</h3>
+                  <p> </p>
+                  <p>コーチングのミッション</p>
+                  <p> </p>
+                  <p>ユーザーが求めるものを分析し、ユーザビリティを備えた最適なサイトを提供。建設業から美容、ブライダル、飲食店まで多種多様な業種の制作実績があります</p>
+                  <div class="button-mission">
+                    <button class="button" type="servise">サービス詳細</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    #eyecatch p {
-    position: absolute;
-    bottom: 30%;
-    right: 55%;
-    transform: translateY(-50%,-50%);
-    font-size: 55px;
-    font-style: italic;
-    font-weight: bold;
-    color: #cccccc;
-    line-height: 1;
-    -webkit-transform: skewX(-15deg);
-    -moz-transform: skewX(-15deg);
-    -o-transform: skewX(-15deg);
-    transform: skewX(-15deg);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=-0.26794919243112214, M21=0, M22=1, SizingMethod='auto
-    expand')";
-    }
+          <div class="about">
+            <div class="about-wrap">
+                <div class="company">
+                  <img src="./img/company.jpeg" alt="" />
+                  <p>company</p>
+                  </div>
+                  <div class="company">
+                    <img src="./img/recruit.jpg" alt="" />
+                    </div>
+                
+              </div>
+              </div>
+              </div>
+            
+  <!-- □実現したいこと
+     　 会社概要と採用情報の位置を左右いっぱいに配置する
+      □発生している問題
+      　marginで配置しようとしたが位置が変わらない
+  
+      #about {
+  width: 100%;
+  background-color: f2f2f2;
+}
+.about-wrap {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
 
-    □試したこと
-    　brタグを使い改行したところ、バックグラウンド画像の下に「ニュースタイトルがここには入ります。3月の決算報告書」が表示されてしまいます。
+.about-left {
+  position: relative;
+  } 
+
+
+.company {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.company img {
+  float: left;
+  display: block;
+  width: 700px;
+  height: 200px;
+  z-index: 1;
+}
+
+.company p {
+  position: absolute;
+  color: #ffffff;
+  top: 40%;
+  left: 40%;
+  z-index: 2;
+  } 
+  
+      □試したこと
+      　marginやpaddingなどで数値を入れたが改善しない
