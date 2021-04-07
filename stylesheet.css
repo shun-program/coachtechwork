@@ -397,14 +397,22 @@ select {
   background-size: cover;
   background-position: center;
   position: relative;
-  display: block;
+  display: flex;
   justify-content: space-around;
+  flex-direction: column;
   width: 750px;
-  height: 100px;
+  height: 200px;
   color: #f2f2f2;
   text-align: center;
   font-size: 30px;
-  padding-top: 90px;
+  align-items: center;
+}
+
+.company h2 {
+  padding-top: 70px;
+}
+.company p {
+  padding-bottom: 70px;
 }
 
 .blank2 {
@@ -416,14 +424,22 @@ select {
   background-size: cover;
   background-position: center;
   position: relative;
-  display: block;
+  display: flex;
   justify-content: space-around;
+  flex-direction: column;
   width: 750px;
-  height: 100px;
+  height: 200px;
   color: #f2f2f2;
   text-align: center;
   font-size: 30px;
-  padding-top: 90px;
+  align-items: center;
+}
+
+.recruit h2 {
+  padding-top: 70px;
+}
+.recruit p {
+  padding-bottom: 70px;
 }
 
 .faq-wrap {
